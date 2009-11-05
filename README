@@ -1,0 +1,49 @@
+= xml_option 0.9.0
+by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
+  godfat (XD) godfat.org
+
+== LINKS:
+
+* github-project[http://github.com/godfat/xml_option]
+* rubyforge-project[http://rubyforge.org/projects/ludy]
+
+== DESCRIPTION:
+
+ Extract subset of XML and convert it into Ruby Hash.
+
+== FEATURES:
+
+* ?
+
+== SYNOPSIS:
+
+ XmlOption.from_file_path(path)
+ XmlOption.from_io(File.open(path))
+ XmlOption.from_string(File.read(path))
+
+== REQUIREMENTS:
+
+* ruby 1.8+ or 1.9.1+
+* nokogiri
+
+== INSTALL:
+
+* gem install xml_option
+
+== LICENSE:
+
+Apache License 2.0
+
+Copyright (c) 2009, Lin Jen-Shin (aka godfat 真常)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
