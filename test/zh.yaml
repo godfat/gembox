@@ -1,0 +1,8 @@
+zh:
+  animal:
+    mammal:
+      cat: "貓"
+      dog: "狗"
+      monkey: "猴子"
+    count: "隻"
+  plant: "植物"

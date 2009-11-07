@@ -1,0 +1,11 @@
+en:
+  animal:
+    bird: "bird"
+    mammal:
+      cat: "cat"
+      dog: "dog"
+    count:
+      one: "a"
+      two: "s"
+  plant: "plant"
+  mineral: "mineral"
