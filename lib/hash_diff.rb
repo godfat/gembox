@@ -8,7 +8,7 @@ module HashDiff
           HashDiff.diff(a[key], b[key], delimiter, "#{prefix}#{key}#{delimiter}", false)
         end
       else
-        map_missing(a, [key], delimiter, prefix).flatten
+        HashDiff.map_missing(a, [key], delimiter, prefix).flatten
       end
     }.compact.flatten + (flip ? HashDiff.diff(b, a, delimiter, prefix, false) : [])
   end
@@ -16,7 +16,7 @@ module HashDiff
   def map_missing hash, missings = hash.keys, delimiter = '.', prefix = nil
     missings.map{ |mis|
       if (value = hash[mis]).kind_of?(Hash)
-        map_missing(value, value.keys, delimiter, "#{prefix}#{mis}#{delimiter}")
+        HashDiff.map_missing(value, value.keys, delimiter, "#{prefix}#{mis}#{delimiter}")
       else # String, Array, etc.
         "#{prefix}#{mis}: #{value}"
       end
