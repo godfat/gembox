@@ -14,6 +14,7 @@ PROJ.rubyforge.name = 'ludy'
 # PROJ.gem.dependencies << ['nokogiri']
 # PROJ.gem.development_dependencies << ['minitest', '>=1.3.0']
 # PROJ.gem.executables = ["bin/#{PROJ.name}"]
+PROJ.gem.executables = ['bin/rlang_diff']
 
 # PROJ.ruby_opts.delete '-w'
 
