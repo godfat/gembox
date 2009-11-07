@@ -24,7 +24,7 @@ module HashDiff
       if (value = hash[mis]).kind_of?(Hash)
         HashDiff.map_missing(value, value.keys, delimiter, "#{prefix}#{mis}#{delimiter}")
       else # String, Array, etc.
-        "#{prefix}#{mis}: #{value}"
+        "#{prefix}#{mis}: #{value.inspect}"
       end
     }
   end
