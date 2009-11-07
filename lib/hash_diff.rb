@@ -2,7 +2,7 @@
 module HashDiff
   module_function
   def diff a, b, delimiter = '.', prefix = '', flip = true
-    a.keys.map{ |key|
+    result = a.keys.map{ |key|
       if b.has_key?(key)
         if a[key].kind_of?(Hash) && b[key].kind_of?(Hash)
           HashDiff.diff(a[key], b[key], delimiter, "#{prefix}#{key}#{delimiter}", false)
@@ -10,7 +10,13 @@ module HashDiff
       else
         HashDiff.map_missing(a, [key], delimiter, prefix).flatten
       end
-    }.compact.flatten + (flip ? HashDiff.diff(b, a, delimiter, prefix, false) : [])
+    }.compact.flatten
+
+    if flip
+      [HashDiff.diff(b, a, delimiter, prefix, false), result]
+    else
+      result
+    end
   end
 
   def map_missing hash, missings = hash.keys, delimiter = '.', prefix = nil
