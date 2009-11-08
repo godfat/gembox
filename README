@@ -13,13 +13,30 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == FEATURES:
 
-* ?
+* Extract subset of XML and convert it into Ruby Hash.
 
 == SYNOPSIS:
 
- XmlOption.from_file_path(path)
- XmlOption.from_io(File.open(path))
- XmlOption.from_string(File.read(path))
+   XmlOption.from_file_path(path)
+   XmlOption.from_io(File.open(path))
+   XmlOption.from_string(File.read(path))
+
+ For example, if this is the input XML:
+
+   <options a="b">
+     <c d="e">f</c>
+     <g h="i" j="k"/>
+     <option l="m" n="o"/>
+     <missing><deep p="q"/></missing>
+   </options>
+
+ It would be parsed to:
+
+ {"options" =>
+    {"g"      => [{"h"=>"i", "j" => "k"}],
+     "option" => [{"l"=>"m", "n"=>"o"}]}}
+
+ See tests for details.
 
 == REQUIREMENTS:
 
