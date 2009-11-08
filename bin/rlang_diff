@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'yaml'
 require 'key_diff'
+require 'yaml'
 
 ARGV.inject{ |a, b|
   extract = lambda{ |path| YAML.load(File.read(path))[File.basename(path).split('.')[0]] }
