@@ -8,17 +8,18 @@ Gem::Specification.new do |s|
   s.authors = ["godfat"]
   s.date = %q{2009-11-08}
   s.default_executable = %q{rlang_diff}
-  s.description = %q{}
+  s.description = %q{ Help you diff keys in two hashes.}
   s.email = %q{godfat@godfat.org}
   s.executables = ["rlang_diff"]
-  s.extra_rdoc_files = ["CHANGES", "README", "bin/rlang_diff", "en.yml", "it.yml", "rediffofi18nymlfiles.zip", "zh.yml"]
-  s.files = ["CHANGES", "README", "Rakefile", "bin/rlang_diff", "en.yml", "it.yml", "lib/key_diff.rb", "lib/key_diff/version.rb", "rediffofi18nymlfiles.zip", "test/en.yaml", "test/zh.yaml", "zh.yml"]
+  s.extra_rdoc_files = ["CHANGES", "README", "bin/rlang_diff", "key_diff.gemspec"]
+  s.files = ["CHANGES", "README", "Rakefile", "bin/rlang_diff", "key_diff.gemspec", "lib/key_diff.rb", "lib/key_diff/version.rb", "test/en.yaml", "test/test_key_diff.rb", "test/zh.yaml"]
   s.homepage = %q{http://github.com/godfat/key_diff}
   s.rdoc_options = ["--charset=utf-8", "--inline-source", "--line-numbers", "--promiscuous", "--main", "README"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{ludy}
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{}
+  s.summary = %q{Help you diff keys in two hashes.}
+  s.test_files = ["test/test_key_diff.rb"]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
