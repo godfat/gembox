@@ -9,11 +9,32 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == DESCRIPTION:
 
+ help you diff keys in two hashes
+
 == FEATURES:
 
-* ?
+* help you diff keys in two hashes
+* rlang_diff help you diff with rails i18n yaml files
 
 == SYNOPSIS:
+
+ help you diff keys in two hashes, e.g.,
+
+   KeyDiff.diff({'a' => 'b', 'f' => {'g' => 'h'}}, {'a' => 'c', 'd' => 'e'})
+   # [['d: "e"'], ['f.g: "h"']]
+
+ in addition, there's an executable `rlang_diff`, which is used like:
+
+   `rlang_diff en.yaml zh.yaml`
+
+ This would output something like:
+
+   en.yaml is missing:
+   animal.mammal.monkey: "猴子"
+
+   zh.yaml is missing:
+   animal.bird: "bird"
+   mineral: "mineral"
 
 == REQUIREMENTS:
 
