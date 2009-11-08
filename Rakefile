@@ -5,10 +5,10 @@ SUDO = '' # this prevent `rake gem:install` to use sudo
 require 'bones'
 Bones.setup
 
-PROJ.name = 'hash_diff'
+PROJ.name = 'key_diff'
 PROJ.authors = 'godfat'
 PROJ.email = 'godfat@godfat.org'
-PROJ.url = 'http://github.com/godfat/hash_diff'
+PROJ.url = 'http://github.com/godfat/key_diff'
 PROJ.rubyforge.name = 'ludy'
 
 # PROJ.gem.dependencies << ['nokogiri']

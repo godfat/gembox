@@ -1,10 +1,10 @@
-= hash_diff 0.9.0
+= key_diff 0.9.0
 by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
   godfat (XD) godfat.org
 
 == LINKS:
 
-* github-project[http://github.com/godfat/hash_diff]
+* github-project[http://github.com/godfat/key_diff]
 * rubyforge-project[http://rubyforge.org/projects/ludy]
 
 == DESCRIPTION:
@@ -21,7 +21,7 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == INSTALL:
 
-* gem install hash_diff
+* gem install key_diff
 
 == LICENSE:
 

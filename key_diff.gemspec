@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{hash_diff}
+  s.name = %q{key_diff}
   s.version = "0.9.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.description = %q{}
   s.email = %q{godfat@godfat.org}
   s.executables = ["rlang_diff"]
-  s.extra_rdoc_files = ["CHANGES", "README", "bin/rlang_diff"]
-  s.files = ["CHANGES", "README", "Rakefile", "bin/rlang_diff", "lib/hash_diff.rb", "lib/hash_diff/version.rb", "test/en.yaml", "test/zh.yaml"]
-  s.homepage = %q{http://github.com/godfat/hash_diff}
+  s.extra_rdoc_files = ["CHANGES", "README", "bin/rlang_diff", "en.yml", "it.yml", "rediffofi18nymlfiles.zip", "zh.yml"]
+  s.files = ["CHANGES", "README", "Rakefile", "bin/rlang_diff", "en.yml", "it.yml", "lib/key_diff.rb", "lib/key_diff/version.rb", "rediffofi18nymlfiles.zip", "test/en.yaml", "test/zh.yaml", "zh.yml"]
+  s.homepage = %q{http://github.com/godfat/key_diff}
   s.rdoc_options = ["--charset=utf-8", "--inline-source", "--line-numbers", "--promiscuous", "--main", "README"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{ludy}

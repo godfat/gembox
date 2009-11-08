@@ -1,11 +1,11 @@
 #!/usr/bin/env ruby
 
 require 'yaml'
-require 'hash_diff'
+require 'key_diff'
 
 ARGV.inject{ |a, b|
   extract = lambda{ |path| YAML.load(File.read(path))[File.basename(path).split('.')[0]] }
-  diffed = HashDiff.diff( extract[a], extract[b] )
+  diffed = KeyDiff.diff( extract[a], extract[b] )
 
   [a, b].zip(diffed).each{ |path_result|
     path, result = path_result
