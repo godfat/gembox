@@ -10,7 +10,7 @@ module KeyDiff
       else
         KeyDiff.map_missing(a, [key], delimiter, prefix).flatten
       end
-    }.compact.flatten
+    }.compact.flatten.sort
 
     if flip
       [KeyDiff.diff(b, a, delimiter, prefix, false), result]
