@@ -18,7 +18,9 @@ class KeyDiffTest < TestCase
     extract = lambda{ |path| YAML.load(File.read(path))[File.basename(path).split('.')[0]] }
     aa, bb = KeyDiff.diff( extract[a], extract[b] )
 
-    assert_equal ['animal.mammal.monkey: "猴子"'], aa
+    monkey = RUBY_VERSION >= '1.9.1' ? '猴子' : '\347\214\264\345\255\220'
+
+    assert_equal ['animal.mammal.monkey: "'+monkey+'"'], aa
     assert_equal ['animal.bird: "bird"', 'mineral: "mineral"'], bb
   end
 end
