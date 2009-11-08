@@ -9,16 +9,16 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == DESCRIPTION:
 
- help you diff keys in two hashes
+ Help you diff keys in two hashes.
 
 == FEATURES:
 
-* help you diff keys in two hashes
+* Help you diff keys in two hashes.
 * rlang_diff help you diff with rails i18n yaml files
 
 == SYNOPSIS:
 
- help you diff keys in two hashes, e.g.,
+ Help you diff keys in two hashes, e.g.,
 
    KeyDiff.diff({'a' => 'b', 'f' => {'g' => 'h'}}, {'a' => 'c', 'd' => 'e'})
    # [['d: "e"'], ['f.g: "h"']]
