@@ -8,7 +8,7 @@ class SizedQueue
   def each     &block; data.each(&block) ;end
   def first          ; data.first        ;end
   def data           ; @data ||= []      ;end
-  def == lhs         ; data == lhs.data  ;end
+  def == rhs         ; data == rhs.data  ;end
   # should be more efficient than Enumerable's to_a?
   def to_a           ; data.dup          ;end
 
