@@ -12,6 +12,7 @@ class SizedQueue
   # should be more efficient than Enumerable's to_a?
   def to_a           ; data.dup          ;end
 
+  # this would drop older data if all data could not fit into the size
   def enqueue *args
     a = args.reverse.take(size)
     self.data = a + (a.size == size ? [] : data[0, size - a.size])
