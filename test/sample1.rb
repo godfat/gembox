@@ -1,0 +1,23 @@
+# encoding: utf-8
+{"options"=>
+  {"option"=>
+    [{"l"=>"a",
+      "lc"=>"b",
+      "cn"=>"c",
+      "invite"=>"d",
+      "bookmark"=>"e"},
+     {"l"=>"f",
+      "lc"=>"g",
+      "cn"=>"h",
+      "invite"=>"i",
+      "bookmark"=>"j"},
+     {"l"=>"k",
+      "lc"=>"l",
+      "cn"=>"m",
+      "invite"=>"n",
+      "bookmark"=>"o"},
+     {"l"=>"p",
+      "lc"=>"q",
+      "cn"=>"r",
+      "invite"=>"s",
+      "bookmark"=>"t"}]}}
