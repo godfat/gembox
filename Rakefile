@@ -2,6 +2,7 @@
 
 SUDO = '' # this prevent `rake gem:install` to use sudo
 
+gem 'bones', '<3'
 require 'bones'
 Bones.setup
 
