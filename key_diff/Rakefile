@@ -9,7 +9,7 @@ Bones.setup
 PROJ.name = 'key_diff'
 PROJ.authors = 'godfat'
 PROJ.email = 'godfat@godfat.org'
-PROJ.url = 'http://github.com/godfat/key_diff'
+PROJ.url = 'http://github.com/godfat/gembox'
 PROJ.rubyforge.name = 'ludy'
 
 # PROJ.gem.dependencies << ['nokogiri']

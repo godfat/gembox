@@ -9,7 +9,7 @@ Bones.setup
 PROJ.name = 'xml_option'
 PROJ.authors = 'godfat'
 PROJ.email = 'godfat@godfat.org'
-PROJ.url = 'http://github.com/godfat/xml_option'
+PROJ.url = 'http://github.com/godfat/gembox'
 PROJ.rubyforge.name = 'ludy'
 
 PROJ.gem.dependencies << ['nokogiri']
