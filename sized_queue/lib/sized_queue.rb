@@ -16,5 +16,6 @@ class SizedQueue
   def enqueue *args
     a = args.reverse.take(size)
     self.data = a + (a.size == size ? [] : data[0, size - a.size])
+    self
   end
 end

@@ -34,6 +34,8 @@ class SizedQueueTest < TestCase
 
     q.enqueue(*(0..9).to_a)
     assert_equal [9, 8, 7, 6, 5], q.to_a
+
+    assert_kind_of SizedQueue, q.enqueue
   end
 
   def test_yaml
