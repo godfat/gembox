@@ -6,7 +6,7 @@ gem 'bones', '<3'
 require 'bones'
 Bones.setup
 
-PROJ.name = 'sized_queue'
+PROJ.name = 'sized_q'
 PROJ.authors = 'godfat'
 PROJ.email = 'godfat@godfat.org'
 PROJ.url = 'http://github.com/godfat/gembox'

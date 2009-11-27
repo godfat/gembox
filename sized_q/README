@@ -1,4 +1,4 @@
-= sized_queue 0.9.0
+= sized_q 0.9.0
 by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
   godfat (XD) godfat.org
 
@@ -18,7 +18,7 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == INSTALL:
 
-* gem install sized_queue
+* gem install sized_q
 
 == LICENSE:
 

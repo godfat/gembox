@@ -1,5 +1,5 @@
 
-class SizedQueue
+class SizedQ
   include Enumerable
   attr_accessor :size
 

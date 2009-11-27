@@ -9,12 +9,12 @@ TestCase = begin
              Test::Unit::TestCase
            end
 
-require 'sized_queue'
+require 'sized_q'
 require 'yaml'
 
-class SizedQueueTest < TestCase
-  def test_sized_queue
-    q = SizedQueue.new(5)
+class SizedQTest < TestCase
+  def test_sized_q
+    q = SizedQ.new(5)
 
     q.enqueue :foo
     assert_equal :foo, q.first
@@ -35,11 +35,11 @@ class SizedQueueTest < TestCase
     q.enqueue(*(0..9).to_a)
     assert_equal [9, 8, 7, 6, 5], q.to_a
 
-    assert_kind_of SizedQueue, q.enqueue
+    assert_kind_of SizedQ, q.enqueue
   end
 
   def test_yaml
-    q = SizedQueue.new(29)
+    q = SizedQ.new(29)
     q.enqueue(*(0..30).to_a)
     assert_equal((2..30).to_a.reverse, q.to_a)
     assert_equal q, YAML.load(YAML.dump(q))
