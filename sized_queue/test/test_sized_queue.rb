@@ -41,8 +41,8 @@ class SizedQueueTest < TestCase
   def test_yaml
     q = SizedQueue.new(29)
     q.enqueue(*(0..30).to_a)
-    assert_equal((2..30).to_a.reverse, q.data)
+    assert_equal((2..30).to_a.reverse, q.to_a)
     assert_equal q, YAML.load(YAML.dump(q))
-    assert_equal q.data, YAML.load(YAML.dump(q)).data
+    assert_equal q.to_a, YAML.load(YAML.dump(q)).to_a
   end
 end
