@@ -18,6 +18,8 @@ class SizedQueue
   end
 
   private
-  attr_writer :data
-  def data           ; @data ||= []      ;end
+  # attr_writer :data
+  # silence warning
+  def data= a; @data = a    ;end
+  def data   ; @data ||= [] ;end
 end
