@@ -45,4 +45,9 @@ class SizedQTest < TestCase
     assert_equal q, YAML.load(YAML.dump(q))
     assert_equal q.to_a, YAML.load(YAML.dump(q)).to_a
   end
+
+  def test_quality
+    assert(SizedQ.new(0) != 123)
+    assert(SizedQ.new(1) != 'a')
+  end
 end

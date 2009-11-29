@@ -8,7 +8,14 @@ class SizedQ
   def first          ; data.first        ;end
   # should be more efficient than Enumerable's to_a?
   def to_a           ; data.dup          ;end
-  def == rhs         ; data == rhs.__send__(:data) ;end
+
+  def == rhs
+    if rhs.kind_of?(self.class)
+      data == rhs.__send__(:data)
+    else
+      false
+    end
+  end
 
   # this would drop older data if all data could not fit into the size
   def enqueue *args
