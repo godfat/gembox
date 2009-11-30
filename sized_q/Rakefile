@@ -7,13 +7,16 @@ rescue LoadError
 end
 
 ensure_in_path 'lib'
-require 'sized_q/version'
+proj = 'sized_q'
 
 Bones{
-  name    'sized_q'
-  url     'http://github.com/godfat/gembox'
+  require "#{proj}/version"
   version SizedQ::VERSION
 
+  # ruby_opts [''] # silence warning, too many in addressable and/or dm-core
+
+  name    proj
+  url     "http://github.com/godfat/gembox"
   authors 'Lin Jen-Shin (aka godfat 真常)'
   email   'godfat (XD) godfat.org'
 

@@ -7,15 +7,17 @@ rescue LoadError
 end
 
 ensure_in_path 'lib'
-require 'key_diff/version'
+proj = 'key_diff'
 
 Bones{
-  name    'key_diff'
-  url     'http://github.com/godfat/gembox'
+  require "#{proj}/version"
   version KeyDiff::VERSION
 
+  # ruby_opts [''] # silence warning, too many in addressable and/or dm-core
   gem.executables ['bin/rlang_diff']
 
+  name    proj
+  url     "http://github.com/godfat/gembox"
   authors 'Lin Jen-Shin (aka godfat 真常)'
   email   'godfat (XD) godfat.org'
 

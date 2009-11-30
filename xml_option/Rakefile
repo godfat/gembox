@@ -7,13 +7,17 @@ rescue LoadError
 end
 
 ensure_in_path 'lib'
-require 'xml_option/version'
+proj = 'xml_option'
 
 Bones{
-  name    'xml_option'
-  url     'http://github.com/godfat/gembox'
+  require "#{proj}/version"
   version XmlOption::VERSION
 
+  # ruby_opts [''] # silence warning, too many in addressable and/or dm-core
+  depend_on 'nokogiri', :version => '>=1.4.0'
+
+  name    proj
+  url     "http://github.com/godfat/gembox"
   authors 'Lin Jen-Shin (aka godfat 真常)'
   email   'godfat (XD) godfat.org'
 

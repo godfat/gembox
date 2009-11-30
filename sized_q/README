@@ -8,6 +8,8 @@ by Lin Jen-Shin (aka godfat-真常[http://godfat.org])
 
 == DESCRIPTION:
 
+ sized queue that would drop too old data
+
 == FEATURES:
 
 == SYNOPSIS:
